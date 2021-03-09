@@ -7,11 +7,11 @@
   "conformsTo": "https://github.com/vivliostyle/vivliostyle-cli",
   "author": "Nobuyuki Takahiro <vivlio@kumihan.com>",
   "inLanguage": "ja",
-  "dateModified": "2021-03-09T02:18:12.618Z",
+  "dateModified": "2021-03-09T04:03:25.215Z",
   "name": "210326-sample",
   "readingOrder": [
     {
-      "url": "manuscript.html",
+      "url": "210326-sample.html",
       "title": "特集<br/>え! 委員会っておもしろそう。<br/>どうやったら入れるの?"
     }
   ],

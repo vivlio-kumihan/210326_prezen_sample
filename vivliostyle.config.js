@@ -3,10 +3,10 @@ module.exports = {
   author: 'Nobuyuki Takahiro <vivlio@kumihan.com>', // default to `author` in `package.json` or undefined.
   language: 'ja', // default to `en`.
   size: 'A4', // paper size.
-  theme: '@vivliostyle/theme-teckbook', // .css or local dir or npm package. default to undefined.
+  theme: 'i-theme/theme.css', // .css or local dir or npm package. default to undefined.
   // entryContext: './manuscripts', // default to '.' (relative to `vivliostyle.config.js`).
   entry: [
-    'manuscript.md', // `title` is automatically guessed from the file (frontmatter > first heading).
+    '210326-sample.md', // `title` is automatically guessed from the file (frontmatter > first heading).
     // {
     //   path: 'epigraph.md',
     //   title: 'Epigraph', // title can be overwritten (entry > file),

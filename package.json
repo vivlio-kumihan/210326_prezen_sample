@@ -4,12 +4,18 @@
   "version": "0.0.0",
   "author": "Nobuyuki Takahiro <vivlio@kumihan.com>",
   "scripts": {
-    "build": "vivliostyle build --press-ready",
-    "preview": "vivliostyle preview"
+    "build:pdf": "vivliostyle build --press-ready",
+    "build:css": "sass i-theme/scss/main.scss i-theme/theme.css",
+    "build": "run-s build:css build:pdf",
+    "preview": "vivliostyle preview",
+    "watch:css": "sass --watch i-theme/scss/main.scss i-theme/theme.css",
+    "watch": "run-p watch:css preview"
   },
   "dependencies": {
     "@vivliostyle/cli": "next",
-    "@vivliostyle/theme-techbook": "^0.2.0"
+    "@vivliostyle/theme-techbook": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.7"
   },
   "license": "AGPL-3.0",
   "private": true
