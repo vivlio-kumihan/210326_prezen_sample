@@ -1,12 +1,12 @@
 module.exports = {
-  title: '210326-sample', // populated into `manifest.json`, default to `title` of the first entry or `name` in `package.json`.
+  title: 'index', // populated into `manifest.json`, default to `title` of the first entry or `name` in `package.json`.
   author: 'Nobuyuki Takahiro <vivlio@kumihan.com>', // default to `author` in `package.json` or undefined.
   language: 'ja', // default to `en`.
   size: 'A4', // paper size.
   theme: 'i-theme/theme.css', // .css or local dir or npm package. default to undefined.
   // entryContext: './manuscripts', // default to '.' (relative to `vivliostyle.config.js`).
   entry: [
-    '210326-sample.md', // `title` is automatically guessed from the file (frontmatter > first heading).
+    'index.md', // `title` is automatically guessed from the file (frontmatter > first heading).
     // {
     //   path: 'epigraph.md',
     //   title: 'Epigraph', // title can be overwritten (entry > file),
