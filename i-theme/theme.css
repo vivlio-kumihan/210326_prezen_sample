@@ -173,11 +173,13 @@ h1 {
   font-size: 20pt;
   line-height: 1.5;
   text-align: left;
+  color: blue;
 }
 
 h2 {
   margin: 8pt auto 4pt;
   font-size: 14pt;
+  color: blue;
 }
 h2:before {
   font-size: 14pt;
@@ -186,6 +188,7 @@ h2:before {
 h3 {
   margin: 4pt auto 2pt;
   font-size: 12pt;
+  color: blue;
 }
 h3:before {
   font-size: 12pt;
@@ -194,6 +197,7 @@ h3:before {
 h4 {
   margin: 4pt auto 2pt;
   font-size: 10pt;
+  color: blue;
 }
 h4:before {
   font-size: 10pt;
