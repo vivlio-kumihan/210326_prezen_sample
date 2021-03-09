@@ -33,38 +33,42 @@
 */
 
 h1 {
-  counter-reset: section table figure footnote ref; /* reset all counters */
+  // 番号を自動で付けるコード
+  // counter-reset: section table figure footnote ref; /* reset all counters */
 }
 
 h2 {
-  counter-reset: subsection; /* reset counters of lower levels */
-  counter-increment: section; /* increment counters of current level */
-
-  &:before {
-    content: counter(section);
+  // 番号を自動で付けるコード
+  // counter-reset: subsection; /* reset counters of lower levels */
+  // counter-increment: section; /* increment counters of current level */
+  
+  // &:before {
+  //   content: counter(section);
+  // }
   }
-}
-
-h3 {
-  counter-reset: subsubsection; /* reset counters of lower levels */
-  counter-increment: subsection; /* increment counters of current level */
-
-  &:before {
-    content: counter(section) "." counter(subsection);
+  
+  h3 {
+  // 番号を自動で付けるコード
+  // counter-reset: subsubsection; /* reset counters of lower levels */
+  // counter-increment: subsection; /* increment counters of current level */
+  
+  // &:before {
+  //   content: counter(section) "." counter(subsection);
+  // }
   }
-}
-
-h4 {
-  counter-increment: subsubsection; /* increment counters of current level */
-
-  &:before {
-    content: counter(section) "." counter(subsection) "." counter(subsubsection);
+  
+  h4 {
+  // 番号を自動で付けるコード
+  // counter-increment: subsubsection; /* increment counters of current level */
+  
+  // &:before {
+  //   content: counter(section) "." counter(subsection) "." counter(subsubsection);
+  // }
   }
-}
-
-
-/* ----------
- * Counter - Captions
+  
+  
+  /* ----------
+  * Counter - Captions
  * ----------
  * table
  * figure

@@ -91,41 +91,8 @@ html {
  * h3: subsection
  * h4: subsubsection
 */
-h1 {
-  counter-reset: section table figure footnote ref;
-  /* reset all counters */
-}
-
-h2 {
-  counter-reset: subsection;
-  /* reset counters of lower levels */
-  counter-increment: section;
-  /* increment counters of current level */
-}
-h2:before {
-  content: counter(section);
-}
-
-h3 {
-  counter-reset: subsubsection;
-  /* reset counters of lower levels */
-  counter-increment: subsection;
-  /* increment counters of current level */
-}
-h3:before {
-  content: counter(section) "." counter(subsection);
-}
-
-h4 {
-  counter-increment: subsubsection;
-  /* increment counters of current level */
-}
-h4:before {
-  content: counter(section) "." counter(subsection) "." counter(subsubsection);
-}
-
 /* ----------
- * Counter - Captions
+  * Counter - Captions
  * ----------
  * table
  * figure
@@ -205,7 +172,7 @@ h1 {
   margin: 8pt auto 4pt;
   font-size: 20pt;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
