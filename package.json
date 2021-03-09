@@ -1,0 +1,16 @@
+{
+  "name": "210326sample",
+  "description": "210326-sample",
+  "version": "0.0.0",
+  "author": "Nobuyuki Takahiro <vivlio@kumihan.com>",
+  "scripts": {
+    "build": "vivliostyle build --press-ready",
+    "preview": "vivliostyle preview"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "next",
+    "@vivliostyle/theme-techbook": "^0.2.0"
+  },
+  "license": "AGPL-3.0",
+  "private": true
+}
