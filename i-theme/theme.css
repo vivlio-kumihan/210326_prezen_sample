@@ -16,30 +16,30 @@
 @page {
   /* JIS A4 */
   size: 210mm 297mm;
-  margin: 25mm 20mm 25mm 20mm;
+  margin: 38.75mm 21mm 24.25mm 21mm;
   /* nonbre */
   @bottom-center {
-    font-size: 9pt;
+    font-size: 3mm;
     font-family: "Hiragino Mincho ProN", serif;
   }
   @top-left {
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: 10pt;
-    content: "vivliostyle-theme-academic のサンプル";
+    font-size: 2.5mm;
+    content: "210326 OBAMJ Feature Article";
   }
   @top-right {
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: 10pt;
+    font-size: 2.5mm;
     content: "";
   }
   @bottom-left {
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: 10pt;
+    font-size: 2.5mm;
     content: "";
   }
   @bottom-right {
     font-family: "Hiragino Mincho ProN", serif;
-    font-size: 10pt;
+    font-size: 2.5mm;
     content: "";
   }
 }
@@ -59,9 +59,9 @@
 }
 html {
   font-family: "Hiragino Mincho ProN", serif;
-  font-size: 10pt;
+  font-size: 3.5mm;
   color: #000000;
-  line-height: 1.8;
+  line-height: 6mm;
   orphans: 1;
   widows: 1;
 }
@@ -106,17 +106,6 @@ table caption:before {
 
 [data-ref=table]::after {
   content: "表 " target-counter(attr(href), table);
-}
-
-figure figcaption {
-  counter-increment: figure;
-}
-figure figcaption:before {
-  content: "図 " counter(figure);
-}
-
-[data-ref=fig]::after {
-  content: "図 " target-counter(attr(href), figure);
 }
 
 /* ----------
@@ -168,18 +157,25 @@ figure figcaption:before {
  * Base - Headings
  * ----------
 */
+body {
+  columns: 2 23rem;
+  column-gap: 2rem;
+}
+
 h1 {
   margin: 8pt auto 4pt;
-  font-size: 20pt;
-  line-height: 1.5;
+  column-span: all;
+  background: red;
+  font-size: 10mm;
+  line-height: 2;
   text-align: left;
-  color: blue;
 }
 
 h2 {
   margin: 8pt auto 4pt;
-  font-size: 14pt;
-  color: blue;
+  column-span: all;
+  font-size: 6mm;
+  line-height: 2;
 }
 h2:before {
   font-size: 14pt;
@@ -187,7 +183,8 @@ h2:before {
 
 h3 {
   margin: 4pt auto 2pt;
-  font-size: 12pt;
+  font-size: 4.5mm;
+  line-height: 2;
   color: blue;
 }
 h3:before {

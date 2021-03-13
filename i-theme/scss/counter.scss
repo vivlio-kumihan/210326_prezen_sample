@@ -74,6 +74,8 @@ h2 {
  * figure
 */
 
+// 図表のキャプションの先頭に文字を置く。
+
 table caption {
   counter-increment: table;
 
@@ -86,17 +88,18 @@ table caption {
   content: "表 " target-counter(attr(href), table);
 }
 
-figure figcaption {
-  counter-increment: figure;
+// 図のキャプション先頭文字の操作
+// figure figcaption {
+//   counter-increment: figure;
 
-  &:before {
-    content: "図 " counter(figure);
-  }
-}
+//   &:before {
+//     content: "図 " counter(figure);
+//   }
+// }
 
-[data-ref="fig"]::after {
-  content: "図 " target-counter(attr(href), figure);
-}
+// [data-ref="fig"]::after {
+//   content: "図 " target-counter(attr(href), figure);
+// }
 
 
 /* ----------

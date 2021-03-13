@@ -3,18 +3,25 @@
  * ----------
 */
 
+body {
+  columns: 2 23rem;
+  column-gap: 2rem;
+}
+
 h1 {
   margin: 8pt auto 4pt;
-  font-size: 20pt;
-  line-height: 1.5;
+  column-span: all;
+  background: red;
+  font-size: 10mm;
+  line-height: 2;
   text-align: left;
-  color: blue;
 }
 
 h2 {
   margin: 8pt auto 4pt;
-  font-size: 14pt;
-  color: blue;
+  column-span: all;
+  font-size: 6mm;
+  line-height: 2;
   
   &:before {
     font-size: 14pt;
@@ -23,7 +30,8 @@ h2 {
 
 h3 {
   margin: 4pt auto 2pt;
-  font-size: 12pt;
+  font-size: 4.5mm;
+  line-height: 2;
   color: blue;
   
   &:before {
