@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-  margin: 8pt auto 4pt;
   column-span: all;
   background: red;
   font-size: 10mm;
@@ -18,7 +17,6 @@ h1 {
 }
 
 h2 {
-  margin: 8pt auto 4pt;
   column-span: all;
   font-size: 6mm;
   line-height: 2;
@@ -29,7 +27,6 @@ h2 {
 }
 
 h3 {
-  margin: 4pt auto 2pt;
   font-size: 4.5mm;
   line-height: 2;
   color: blue;
@@ -40,7 +37,6 @@ h3 {
 }
 
 h4 {
-  margin: 4pt auto 2pt;
   font-size: 10pt;
   color: blue;
 
@@ -222,7 +218,7 @@ ul.nostyle {
 p {
   margin: 0;
   text-align: justify;
-  text-indent: 1em;
+  text-indent: 1rem;
 }
 
 strong {
